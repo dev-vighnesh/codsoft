@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+        nav
+        {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo
+        {
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding:10px 20px;
+            font-size: 20px;
+        }
+        .menu a:before
+        {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding:10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: background 0.3s; /* Optional: for smooth hover transition */        
+        }
+        .register a:hover
+        {
+            background: darkred; /* Change this color as desired */
+        }
+        .h-text
+        {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .h-text span
+        {
+            letter-spacing: 5px;
+        }
+        .h-text h1
+        {
+            font-size: 3.5em;
+        }
+        .h-text a {
+        text-decoration: none;
+        background: indianred;
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        transition: background 0.3s; /* Optional: for smooth hover transition */
+        }
+
+       .h-text a:hover 
+       {
+          background: darkred; /* Change this color as desired */
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Voyager
+            </div>
+            <div class="menu">
+                 <a href="#">Home</a>
+                 <a href="#">Hill Stations</a>
+                 <a href="#">Best offers</a>
+                 <a href="#">Our Sites</a>
+                 <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Enjoy</span>
+            <h1>International Travel Agency</h1>
+            <br>
+            <a href="#">Book your Trip</a>
+        </section>
+    </header>
+    <footer>
+        <div class="footerContainer" style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+            <div class="socialIcons" style="margin-bottom: 15px;">
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5em;"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5em;"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5em;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5em;"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5em;"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="footerNav" style="margin-bottom: 15px;">
+                <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px;">
+                    <li><a href="#" style="text-decoration: none; color: white;">Home</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">News</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">About</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="copyright" style="font-size: 0.9em;">
+                <p>Copyright &copy; 2024 Voyager. All rights reserved. Designed by <span class="designer" style="color: lightpink;">Vighnesh</span></p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
